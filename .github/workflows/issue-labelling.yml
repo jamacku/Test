@@ -29,6 +29,7 @@ jobs:
         uses: redhat-plumbers-in-action/advanced-issue-labeler@latest
         with:
           issue-form: ${{ steps.issue-parser.outputs.jsonString }}
+          template: ${{ matrix.template }}
           section: frequency
           block-list: |
             None
