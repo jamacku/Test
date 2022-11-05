@@ -2,7 +2,8 @@
 ---
 
 policy:
-  - section:
+  - template: ['bug.yml', 'feature.yml']
+    section:
       - id: ['type']
         block-list: ['other']
         label:
